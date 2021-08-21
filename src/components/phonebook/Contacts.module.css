@@ -1,0 +1,64 @@
+ul {
+  padding: 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  height: 250px;
+  border: 1px solid blue;
+}
+
+.label {
+  display: block;
+}
+
+.label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.input {
+  margin-top: 5px;
+  padding: 5px;
+  display: block;
+  width: 350px;
+  transition: all 200ms ease-in-out;
+}
+
+.input:hover,
+.input:focus,
+.input:not(:placeholder-shown) {
+  outline: transparent;
+  border: 2px solid blue;
+}
+
+.button {
+  margin-top: 32px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.item {
+  margin-top: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  border: 1px solid blue;
+}
+
+.item::before {
+  margin-left: 5px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: blue;
+}
